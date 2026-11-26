@@ -1,0 +1,600 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Click Design — Graphic Design, Print, Tuition Video Editing, Reels & Photography</title>
+  <meta
+    name="description"
+    content="Click Design: Graphic Design & Printing, Tuition Class Video Editing & YouTube/Cloud Upload, TikTok & FB Reels, and Pro Photography across Sri Lanka."
+  />
+
+  <!-- Google Fonts: Plus Jakarta Sans, Space Grotesk & Noto Sans Sinhala -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Noto+Sans+Sinhala:wght@400;600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Space+Grotesk:wght@600;700;800&display=swap"
+    rel="stylesheet"
+  />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <!-- Vibrant Animated Aurora Background -->
+  <div class="aurora-bg" aria-hidden="true">
+    <div class="aurora-blob blob-1"></div>
+    <div class="aurora-blob blob-2"></div>
+    <div class="aurora-blob blob-3"></div>
+  </div>
+  <div class="noise-overlay" aria-hidden="true"></div>
+
+  <!-- Navbar -->
+  <header class="navbar">
+    <div class="container nav-inner">
+      <a href="#top" class="brand">
+        <span class="brand-mark" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2">
+            <path d="M12 3l2.2 5.8L20 11l-5.8 2.2L12 19l-2.2-5.8L4 11l5.8-2.2L12 3z" />
+          </svg>
+        </span>
+        <span>Click <span class="gradient-text">Design</span></span>
+      </a>
+
+      <nav>
+        <ul class="nav-links" id="nav-links">
+          <li><a href="#services" data-i18n="nav_services">Services</a></li>
+          <li><a href="#showcase" data-i18n="nav_showcase">Showcase</a></li>
+          <li><a href="#process" data-i18n="nav_process">How It Works</a></li>
+          <li><a href="#faq" data-i18n="nav_faq">FAQ</a></li>
+        </ul>
+      </nav>
+
+      <div class="nav-actions">
+        <div class="lang-switch" role="group" aria-label="Language switcher">
+          <button type="button" class="lang-btn active" data-lang="en">EN</button>
+          <button type="button" class="lang-btn" data-lang="si">සිං</button>
+        </div>
+        <a href="#order" class="btn btn-primary nav-cta-desktop" data-i18n="nav_cta">Book Now</a>
+        <button type="button" class="mobile-toggle" id="mobile-toggle" aria-label="Toggle Menu">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <line x1="3" y1="6" x2="21" y2="6" />
+            <line x1="3" y1="12" x2="21" y2="12" />
+            <line x1="3" y1="18" x2="21" y2="18" />
+          </svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main id="top">
+    <!-- Hero Section -->
+    <section class="hero">
+      <div class="container hero-grid">
+        <div class="hero-content">
+          <div class="hero-badge">
+            <span class="pulse"></span>
+            <span data-i18n="hero_badge">All-in-One Creative, Video & Print Studio</span>
+          </div>
+
+          <h1 class="hero-title">
+            <span data-i18n="hero_title_1">Bold Designs, Pro Video &amp; </span>
+            <span class="gradient-text" data-i18n="hero_title_grad">Vibrant Storytelling.</span>
+          </h1>
+
+          <p class="hero-subtitle" data-i18n="hero_subtitle">
+            From eye-catching graphic design &amp; high-quality printing to tuition class video editing with direct YouTube / cloud uploads, viral TikTok &amp; FB Reels, and pro photography — everything under one colorful roof.
+          </p>
+
+          <div class="hero-pills">
+            <span class="hero-pill p1" data-i18n="pill_design">Graphic Design</span>
+            <span class="hero-pill p2" data-i18n="pill_print">Quality Printing</span>
+            <span class="hero-pill p3" data-i18n="pill_tuition">Tuition Video &amp; Cloud Upload</span>
+            <span class="hero-pill p4" data-i18n="pill_reels">TikTok &amp; FB Reels</span>
+            <span class="hero-pill p5" data-i18n="pill_photo">Photography</span>
+          </div>
+
+          <div class="hero-cta">
+            <a href="#order" class="btn btn-primary" data-i18n="hero_btn_order">Start Your Project</a>
+            <a href="#services" class="btn btn-glass" data-i18n="hero_btn_services">Explore Services</a>
+          </div>
+
+          <div class="hero-stats">
+            <div class="stat-item">
+              <strong class="gradient-text" data-i18n="stat_1_val">Fast 24h</strong>
+              <span data-i18n="stat_1_lbl">Quick Turnaround</span>
+            </div>
+            <div class="stat-item">
+              <strong class="gradient-text" data-i18n="stat_2_val">100% Cloud</strong>
+              <span data-i18n="stat_2_lbl">YouTube, Drive &amp; Any Cloud</span>
+            </div>
+            <div class="stat-item">
+              <strong class="gradient-text" data-i18n="stat_3_val">Print Ready</strong>
+              <span data-i18n="stat_3_lbl">Design + Print Delivery</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="hero-visual">
+          <div class="hero-frame">
+            <div class="hero-frame-inner">
+              <img
+                src="assets/hero-studio.jpg"
+                alt="Click Design creative studio setup with camera lens, editing timeline, CMYK prints and vertical reels"
+              />
+            </div>
+          </div>
+
+          <div class="float-card top-left">
+            <div class="float-icon pink">🎬</div>
+            <div>
+              <strong data-i18n="float_1_title">Tuition Video Ready</strong>
+              <small data-i18n="float_1_sub">Rendered &amp; Uploaded to Cloud</small>
+            </div>
+          </div>
+
+          <div class="float-card bottom-right">
+            <div class="float-icon cyan">🎨</div>
+            <div>
+              <strong data-i18n="float_2_title">CMYK + Digital Pro</strong>
+              <small data-i18n="float_2_sub">Design, Print, Reels &amp; Photo</small>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Colorful Scrolling Marquee -->
+    <div class="marquee-wrap" aria-hidden="true">
+      <div class="marquee-track">
+        <span class="marquee-item"><span class="marquee-dot"></span> Graphic Design</span>
+        <span class="marquee-item"><span class="marquee-dot"></span> Tuition Class Video Editing</span>
+        <span class="marquee-item"><span class="marquee-dot"></span> YouTube &amp; Cloud Upload</span>
+        <span class="marquee-item"><span class="marquee-dot"></span> High-Quality Printing</span>
+        <span class="marquee-item"><span class="marquee-dot"></span> TikTok &amp; FB Reels</span>
+        <span class="marquee-item"><span class="marquee-dot"></span> Event &amp; Brand Photography</span>
+        <span class="marquee-item"><span class="marquee-dot"></span> Graphic Design</span>
+        <span class="marquee-item"><span class="marquee-dot"></span> Tuition Class Video Editing</span>
+        <span class="marquee-item"><span class="marquee-dot"></span> YouTube &amp; Cloud Upload</span>
+        <span class="marquee-item"><span class="marquee-dot"></span> High-Quality Printing</span>
+        <span class="marquee-item"><span class="marquee-dot"></span> TikTok &amp; FB Reels</span>
+        <span class="marquee-item"><span class="marquee-dot"></span> Event &amp; Brand Photography</span>
+      </div>
+    </div>
+
+    <!-- Services Section -->
+    <section class="section" id="services">
+      <div class="container">
+        <div class="section-header reveal">
+          <div class="eyebrow"><span class="dot"></span><span data-i18n="services_eyebrow">What We Do</span></div>
+          <h2 class="section-title" data-i18n="services_title">Everything You Need to Stand Out &amp; Grow</h2>
+          <p class="section-desc" data-i18n="services_desc">
+            Tailored creative solutions for Tuition Sirs, brands, businesses, and content creators across Sri Lanka.
+          </p>
+        </div>
+
+        <div class="services-grid">
+          <!-- Featured Card: Tuition Class Video Editing & Cloud Upload -->
+          <article class="service-card featured card-cyan reveal">
+            <div>
+              <div class="service-icon-box" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <rect x="2" y="4" width="20" height="14" rx="3" />
+                  <polygon points="10 8 15 11 10 14 10 8" fill="currentColor" stroke="none" />
+                  <path d="M8 21h8M12 18v3" />
+                </svg>
+              </div>
+              <span class="service-tag" data-i18n="svc_tuition_tag">Tuition Sirs' Special</span>
+              <h3 data-i18n="svc_tuition_title">Tuition Class Video Editing &amp; Cloud Upload</h3>
+              <p data-i18n="svc_tuition_desc">
+                Send us your raw class recordings and focus on teaching! We cleanly edit, enhance voice clarity, add branded intros/slides, render in crisp HD/4K, and upload directly to YouTube or any cloud storage you prefer.
+              </p>
+
+              <div class="cloud-badges">
+                <span class="cloud-chip">▶ YouTube (Unlisted/Private)</span>
+                <span class="cloud-chip">☁ Google Drive</span>
+                <span class="cloud-chip">📁 OneDrive / Mega</span>
+                <span class="cloud-chip">⚡ 1080p / 4K Render</span>
+              </div>
+
+              <ul class="feature-list">
+                <li data-i18n="svc_tuition_l1">Clean cuts, noise-free audio &amp; whiteboard/slide overlays</li>
+                <li data-i18n="svc_tuition_l2">Fast Full HD / 4K rendering optimized for student viewing</li>
+                <li data-i18n="svc_tuition_l3">Direct upload to YouTube (Unlisted/Private), Google Drive, OneDrive, or Mega</li>
+                <li data-i18n="svc_tuition_l4">Custom class thumbnails &amp; ready-to-share student links</li>
+              </ul>
+
+              <div class="service-footer">
+                <a href="#order" class="service-action" data-select-service="Tuition Video + Cloud Upload" data-i18n="svc_cta_select">
+                  Select This Service →
+                </a>
+              </div>
+            </div>
+
+            <div class="service-media">
+              <img src="assets/video-cloud.jpg" alt="Tuition class video editing and cloud upload studio workstation" />
+            </div>
+          </article>
+
+          <!-- Card 2: Graphic Design & Printing -->
+          <article class="service-card card-pink reveal">
+            <div>
+              <div class="service-icon-box" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M12 2L2 7l10 5 10-5-10-5z" />
+                  <path d="M2 17l10 5 10-5" />
+                  <path d="M2 12l10 5 10-5" />
+                </svg>
+              </div>
+              <span class="service-tag" data-i18n="svc_design_tag">Design + Print</span>
+              <h3 data-i18n="svc_design_title">Graphic Design &amp; Printing</h3>
+              <p data-i18n="svc_design_desc">
+                Vibrant, scroll-stopping designs crafted to match your brand — plus full printing support so you receive finished physical prints without any hassle.
+              </p>
+              <ul class="feature-list">
+                <li data-i18n="svc_design_l1">Tuition posters, tute covers, banners, flyers &amp; social media posts</li>
+                <li data-i18n="svc_design_l2">Logos, brand identity, business cards, brochures &amp; stickers</li>
+                <li data-i18n="svc_design_l3">High-resolution CMYK printing (gloss/matte, flex banners, cards)</li>
+              </ul>
+            </div>
+            <div class="service-footer">
+              <a href="#order" class="service-action" data-select-service="Graphic Design" data-i18n="svc_cta_select">
+                Select This Service →
+              </a>
+            </div>
+          </article>
+
+          <!-- Card 3: TikTok & FB Reels -->
+          <article class="service-card card-gold reveal">
+            <div>
+              <div class="service-icon-box" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <rect x="6" y="2" width="12" height="20" rx="3" />
+                  <polygon points="10 9 15 12 10 15 10 9" fill="currentColor" stroke="none" />
+                </svg>
+              </div>
+              <span class="service-tag" data-i18n="svc_reels_tag">Short-Form Viral</span>
+              <h3 data-i18n="svc_reels_title">TikTok &amp; Facebook Reels Editing</h3>
+              <p data-i18n="svc_reels_desc">
+                Turn ideas, classes, or products into energetic vertical videos built to grab attention in the first 2 seconds.
+              </p>
+              <ul class="feature-list">
+                <li data-i18n="svc_reels_l1">Dynamic captions, Sinhala/English subtitles &amp; kinetic typography</li>
+                <li data-i18n="svc_reels_l2">Trending transitions, beat-synced cuts &amp; sound effects</li>
+                <li data-i18n="svc_reels_l3">Color grading optimized for mobile feeds (9:16 vertical)</li>
+              </ul>
+            </div>
+            <div class="service-footer">
+              <a href="#order" class="service-action" data-select-service="TikTok & FB Reels" data-i18n="svc_cta_select">
+                Select This Service →
+              </a>
+            </div>
+          </article>
+
+          <!-- Card 4: Photography -->
+          <article class="service-card card-lime reveal">
+            <div>
+              <div class="service-icon-box" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z" />
+                  <circle cx="12" cy="13" r="4" />
+                </svg>
+              </div>
+              <span class="service-tag" data-i18n="svc_photo_tag">Visual Stories</span>
+              <h3 data-i18n="svc_photo_title">Photography &amp; Retouching</h3>
+              <p data-i18n="svc_photo_desc">
+                Sharp, vibrant photography that captures real energy — from tuition seminars and events to portraits and commercial product shoots.
+              </p>
+              <ul class="feature-list">
+                <li data-i18n="svc_photo_l1">Tuition seminars, prize givings &amp; special events coverage</li>
+                <li data-i18n="svc_photo_l2">Studio/outdoor portraits &amp; brand product photography</li>
+                <li data-i18n="svc_photo_l3">Pro color grading &amp; high-res digital gallery delivery</li>
+              </ul>
+            </div>
+            <div class="service-footer">
+              <a href="#order" class="service-action" data-select-service="Photography" data-i18n="svc_cta_select">
+                Select This Service →
+              </a>
+            </div>
+          </article>
+
+          <!-- Card 5: Dedicated Print Delivery Highlight -->
+          <article class="service-card card-violet reveal">
+            <div>
+              <div class="service-icon-box" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <polyline points="6 9 6 2 18 2 18 9" />
+                  <path d="M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2" />
+                  <rect x="6" y="14" width="12" height="8" />
+                </svg>
+              </div>
+              <span class="service-tag" data-i18n="svc_print_tag">CMYK Press</span>
+              <h3 data-i18n="svc_print_title">Quality Printing &amp; Delivery</h3>
+              <p data-i18n="svc_print_desc">
+                Need your designs physically printed? We handle vibrant, color-accurate printing and get finished materials ready for you.
+              </p>
+              <ul class="feature-list">
+                <li data-i18n="svc_print_l1">Glossy &amp; Matte Flyers, Class Handouts &amp; Booklets</li>
+                <li data-i18n="svc_print_l2">Weatherproof Flex Banners, X-Stands &amp; Stickers</li>
+                <li data-i18n="svc_print_l3">Premium Business Cards, Invitation Cards &amp; Certificates</li>
+              </ul>
+            </div>
+            <div class="service-footer">
+              <a href="#order" class="service-action" data-select-service="Design Printing" data-i18n="svc_cta_select">
+                Select This Service →
+              </a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Visual Studio Showcase -->
+    <section class="section" id="showcase">
+      <div class="container">
+        <div class="section-header reveal">
+          <div class="eyebrow"><span class="dot"></span><span data-i18n="showcase_eyebrow">Creative Spectrum</span></div>
+          <h2 class="section-title" data-i18n="showcase_title">Crafted With Color, Precision &amp; Speed</h2>
+          <p class="section-desc" data-i18n="showcase_desc">
+            A glimpse into our multi-disciplinary creative studio workflow.
+          </p>
+        </div>
+
+        <div class="showcase-grid">
+          <div class="showcase-card reveal">
+            <div class="showcase-img">
+              <img src="assets/hero-studio.jpg" alt="Click Design creative studio synergy" />
+              <span class="showcase-pill" data-i18n="sh_1_pill">Full Studio</span>
+            </div>
+            <div class="showcase-body">
+              <h4 data-i18n="sh_1_title">Design, Video &amp; Camera Synergy</h4>
+              <p data-i18n="sh_1_desc">One cohesive creative team handling your visuals from concept to final upload or print.</p>
+            </div>
+          </div>
+
+          <div class="showcase-card reveal">
+            <div class="showcase-img">
+              <img src="assets/video-cloud.jpg" alt="Tuition video editing and cloud upload desk" />
+              <span class="showcase-pill" data-i18n="sh_2_pill">Tuition &amp; Cloud</span>
+            </div>
+            <div class="showcase-body">
+              <h4 data-i18n="sh_2_title">Render &amp; Upload Pipeline</h4>
+              <p data-i18n="sh_2_desc">Recorded classes transformed into crisp, organized YouTube &amp; Cloud lessons on time.</p>
+            </div>
+          </div>
+
+          <div class="showcase-card reveal">
+            <div class="showcase-img">
+              <img src="assets/print-photo.jpg" alt="Vibrant print materials, photography gear and reels" />
+              <span class="showcase-pill" data-i18n="sh_3_pill">Print &amp; Photo</span>
+            </div>
+            <div class="showcase-body">
+              <h4 data-i18n="sh_3_title">Vibrant CMYK Prints &amp; Photography</h4>
+              <p data-i18n="sh_3_desc">Color-accurate printing paired with sharp studio photography &amp; Reels production.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- How It Works -->
+    <section class="section" id="process">
+      <div class="container">
+        <div class="section-header reveal">
+          <div class="eyebrow"><span class="dot"></span><span data-i18n="proc_eyebrow">Simple Process</span></div>
+          <h2 class="section-title" data-i18n="proc_title">How We Work Together</h2>
+          <p class="section-desc" data-i18n="proc_desc">
+            Zero stress. Send your idea or footage, and we handle the rest.
+          </p>
+        </div>
+
+        <div class="steps-grid">
+          <div class="step-card reveal">
+            <div class="step-num">01</div>
+            <h4 data-i18n="st_1_t">Send Brief or Footage</h4>
+            <p data-i18n="st_1_d">Share your design idea, class video via Drive/Telegram, or event date on WhatsApp.</p>
+          </div>
+          <div class="step-card reveal">
+            <div class="step-num">02</div>
+            <h4 data-i18n="st_2_t">Design, Edit &amp; Craft</h4>
+            <p data-i18n="st_2_d">We bring your project to life with vibrant colors, crisp audio, and modern pacing.</p>
+          </div>
+          <div class="step-card reveal">
+            <div class="step-num">03</div>
+            <h4 data-i18n="st_3_t">Review &amp; Refine</h4>
+            <p data-i18n="st_3_d">Preview drafts quickly and request any tweaks until everything looks spot-on.</p>
+          </div>
+          <div class="step-card reveal">
+            <div class="step-num">04</div>
+            <h4 data-i18n="st_4_t">Print or Cloud Delivery</h4>
+            <p data-i18n="st_4_d">Receive ready cloud/YouTube links, digital files, or neatly printed deliverables.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Interactive Order & Quote Section -->
+    <section class="section order-section" id="order">
+      <div class="container">
+        <div class="order-wrapper reveal">
+          <div>
+            <div class="eyebrow"><span class="dot"></span><span data-i18n="order_eyebrow">Let's Create</span></div>
+            <h2 class="section-title" style="text-align:left; font-size: clamp(1.85rem, 3.2vw, 2.55rem);" data-i18n="order_title">
+              Ready to Launch Your Next Project?
+            </h2>
+            <p class="section-desc" style="margin-bottom: 1.5rem;" data-i18n="order_desc">
+              Pick the services you need below and send your brief straight to WhatsApp — or copy your formatted order summary in one click.
+            </p>
+
+            <div class="contact-cards">
+              <div class="contact-pill">
+                <div class="float-icon pink">💬</div>
+                <div>
+                  <strong data-i18n="contact_wa_t">WhatsApp / Call</strong>
+                  <span id="studio-phone">+94 77 000 0000</span>
+                </div>
+              </div>
+              <div class="contact-pill">
+                <div class="float-icon cyan">✉️</div>
+                <div>
+                  <strong data-i18n="contact_em_t">Email Studio</strong>
+                  <span id="studio-email">hello@clickdesign.lk</span>
+                </div>
+              </div>
+              <div class="contact-pill">
+                <div class="float-icon" style="background: linear-gradient(135deg, #ffb800, #ff5e57);">🚀</div>
+                <div>
+                  <strong data-i18n="contact_loc_t">Service Coverage</strong>
+                  <span id="studio-location">Islandwide Online Service &amp; Print Delivery (Sri Lanka)</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <form class="order-form" onsubmit="return false;">
+            <div>
+              <label style="font-size:0.88rem; font-weight:700; color:var(--text-muted);" data-i18n="select_lbl">
+                Select Services Needed:
+              </label>
+              <div class="service-selector">
+                <button type="button" class="svc-toggle selected" data-service="Graphic Design">
+                  🎨 <span data-i18n="opt_design">Graphic Design</span>
+                </button>
+                <button type="button" class="svc-toggle" data-service="Design Printing">
+                  🖨️ <span data-i18n="opt_print">Design Printing</span>
+                </button>
+                <button type="button" class="svc-toggle" data-service="Tuition Video + Cloud Upload">
+                  🎬 <span data-i18n="opt_tuition">Tuition Video + Cloud Upload</span>
+                </button>
+                <button type="button" class="svc-toggle" data-service="TikTok & FB Reels">
+                  📱 <span data-i18n="opt_reels">TikTok &amp; FB Reels</span>
+                </button>
+                <button type="button" class="svc-toggle" data-service="Photography" style="grid-column: span 2;">
+                  📸 <span data-i18n="opt_photo">Photography</span>
+                </button>
+              </div>
+            </div>
+
+            <div class="field-group">
+              <label for="client-name" data-i18n="lbl_name">Your Name / Institute / Brand</label>
+              <input id="client-name" type="text" data-i18n-placeholder="ph_name" placeholder="e.g. Kasun Sir / Nova Academy" />
+            </div>
+
+            <div class="field-group">
+              <label for="client-contact" data-i18n="lbl_contact">Your Phone / WhatsApp</label>
+              <input id="client-contact" type="text" data-i18n-placeholder="ph_contact" placeholder="e.g. 077 123 4567" />
+            </div>
+
+            <div class="field-group">
+              <label for="client-cloud" data-i18n="lbl_cloud">Preferred Cloud / Delivery (Optional)</label>
+              <input id="client-cloud" type="text" data-i18n-placeholder="ph_cloud" placeholder="e.g. YouTube Unlisted / Google Drive / Printed Copies" />
+            </div>
+
+            <div class="field-group">
+              <label for="client-details" data-i18n="lbl_details">Project Details</label>
+              <textarea
+                id="client-details"
+                rows="3"
+                data-i18n-placeholder="ph_details"
+                placeholder="Tell us about your video length, poster size, event date, or Reels style..."
+              ></textarea>
+            </div>
+
+            <div class="form-actions">
+              <button type="button" id="btn-wa-send" class="btn btn-whatsapp" data-i18n="btn_wa_send">
+                Send Order via WhatsApp
+              </button>
+              <button type="button" id="btn-copy-brief" class="btn btn-glass" data-i18n="btn_copy">
+                Copy Order Brief
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="section" id="faq">
+      <div class="container">
+        <div class="section-header reveal">
+          <div class="eyebrow"><span class="dot"></span><span data-i18n="faq_eyebrow">Quick Answers</span></div>
+          <h2 class="section-title" data-i18n="faq_title">Frequently Asked Questions</h2>
+        </div>
+
+        <div class="faq-list">
+          <div class="faq-item reveal">
+            <button type="button" class="faq-q">
+              <span data-i18n="faq_1_q">How do Tuition Sirs send raw class videos to edit?</span>
+              <span class="faq-icon">+</span>
+            </button>
+            <div class="faq-a">
+              <p data-i18n="faq_1_a">
+                You can upload raw recordings to Google Drive, Telegram, OneDrive, or Mega and send us the link. Once edited and rendered, we upload directly to your YouTube channel (Public/Unlisted/Private) or preferred cloud storage!
+              </p>
+            </div>
+          </div>
+
+          <div class="faq-item reveal">
+            <button type="button" class="faq-q">
+              <span data-i18n="faq_2_q">Do you handle both designing and printing together?</span>
+              <span class="faq-icon">+</span>
+            </button>
+            <div class="faq-a">
+              <p data-i18n="faq_2_a">
+                Yes! We design posters, tute covers, flyers, business cards, banners, and stickers, and get them printed in vibrant high quality so you don't have to deal with multiple vendors.
+              </p>
+            </div>
+          </div>
+
+          <div class="faq-item reveal">
+            <button type="button" class="faq-q">
+              <span data-i18n="faq_3_q">Can you add Sinhala &amp; English captions for TikTok and FB Reels?</span>
+              <span class="faq-icon">+</span>
+            </button>
+            <div class="faq-a">
+              <p data-i18n="faq_3_a">
+                Absolutely. We craft energetic 9:16 vertical Reels with synced Sinhala, Singlish, or English dynamic captions, color grading, and trending pacing.
+              </p>
+            </div>
+          </div>
+
+          <div class="faq-item reveal">
+            <button type="button" class="faq-q">
+              <span data-i18n="faq_4_q">How fast is the turnaround time?</span>
+              <span class="faq-icon">+</span>
+            </button>
+            <div class="faq-a">
+              <p data-i18n="faq_4_a">
+                Social media designs and Reels typically take 24–48 hours. Tuition class video editing + cloud upload is prioritized so your students get lessons on schedule.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container footer-inner">
+      <a href="#top" class="brand">
+        <span class="brand-mark" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2">
+            <path d="M12 3l2.2 5.8L20 11l-5.8 2.2L12 19l-2.2-5.8L4 11l5.8-2.2L12 3z" />
+          </svg>
+        </span>
+        <span>Click <span class="gradient-text">Design</span></span>
+      </a>
+      <p data-i18n="footer_copy">© 2026 Click Design. Crafted with bold color &amp; creative energy.</p>
+    </div>
+  </footer>
+
+  <!-- Floating WhatsApp CTA -->
+  <a id="floating-wa-link" class="floating-wa" href="#" target="_blank" rel="noopener noreferrer">
+    <span>💬</span>
+    <span data-i18n="wa_float">Chat on WhatsApp</span>
+  </a>
+
+  <div id="toast" class="toast" role="status" aria-live="polite"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
