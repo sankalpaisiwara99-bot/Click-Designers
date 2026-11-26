@@ -5,17 +5,19 @@
 
 const STUDIO_CONFIG = {
   brandName: "Click Design",
-  whatsappNumber: "94770000000", // Replace with your WhatsApp number (e.g., 94771234567 without +)
-  phoneDisplay: "+94 77 000 0000",
-  email: "hello@clickdesign.lk",
-  locationEn: "Islandwide Online Service & Print Delivery (Sri Lanka)",
-  locationSi: "දිවයින පුරා Online සේවා සහ Print බෙදාහැරීම් (ශ්‍රී ලංකාව)"
+  whatsappNumber: "94704870348",
+  phoneDisplay: "070 487 0348 (+94 70 487 0348)",
+  email: "sankalpaisiwara@gmail.com",
+  locationEn: "Panadura — Islandwide Online Service & Print Delivery",
+  locationSi: "පානදුර — දිවයින පුරා Online සේවා සහ Print බෙදාහැරීම්"
 };
 
 const TRANSLATIONS = {
   en: {
     nav_services: "Services",
-    nav_showcase: "Showcase",
+    nav_portfolio: "Portfolio",
+    nav_reels: "AI Reels",
+    nav_showcase: "Studio",
     nav_process: "How It Works",
     nav_faq: "FAQ",
     nav_cta: "Book Now",
@@ -87,7 +89,39 @@ const TRANSLATIONS = {
       "Need your designs physically printed? We handle vibrant, color-accurate printing and get finished materials ready for you.",
     svc_print_l1: "Glossy & Matte Flyers, Class Handouts & Booklets",
     svc_print_l2: "Weatherproof Flex Banners, X-Stands & Stickers",
-    svc_print_l3: "Premium Business Cards, Invitation Cards & Certificates",
+    svc_print_l3: "Custom T-Shirt / Polo Printing, Hang Tags, Business Cards & Certificates",
+
+    port_eyebrow: "Recent Works",
+    port_title: "Real Design & Print Samples",
+    port_desc:
+      "A curated gallery of tuition posters, tute covers, social media flyers, flex/X-banners, and custom apparel printing. Click any sample to preview full size.",
+    flt_all: "All Works (9)",
+    flt_flyers: "Social Flyers",
+    flt_covers: "Tute Covers",
+    flt_banners: "Banners & X-Stands",
+    flt_printing: "Printing Works",
+    cat_cover: "Tute Cover",
+    cat_flyer: "Social Flyer",
+    cat_banner: "Banner & X-Stand",
+    cat_print: "Printing Work",
+    p1_title: "2028 Business Studies — Illustrated Cover",
+    p2_title: "2029 Biology — Flex Banner (Sakya)",
+    p3_title: "2028 Business Studies — Module Cover",
+    p4_title: "2028 Business Studies — Unit Launch",
+    p5_title: "Tamil Language Classes — Grade 1–9 Flyer",
+    p6_title: "2028 Business Studies — Class Promo Post",
+    p7_title: "2029 Accounting — X-Stand Banner",
+    pr1_title: "Black Buck — Custom Polo T-Shirt Print",
+    pr2_title: "Black Buck — Custom Apparel Hang Tag Print",
+
+    reels_eyebrow: "AI & Viral Video",
+    reels_title: "TikTok & AI Reels Samples",
+    reels_desc:
+      "Next-level AI-assisted & custom-edited 9:16 vertical Reels for tuition teachers, brands, and creators — built to stop the scroll and boost admissions or sales.",
+    reel_1_title: "2027 Class Promo — Outdoor AI Commercial",
+    reel_1_desc: "Natural Sri Lankan outdoor storytelling with crisp Sinhala voiceover, AI visuals & 9:16 pacing.",
+    reel_2_title: "2028 A/L Combined Maths — Classroom AI Reel",
+    reel_2_desc: "Dynamic classroom scenes, emotional hook, clean Sinhala narration & branded outro card.",
 
     showcase_eyebrow: "Creative Spectrum",
     showcase_title: "Crafted With Color, Precision & Speed",
@@ -160,7 +194,9 @@ const TRANSLATIONS = {
 
   si: {
     nav_services: "සේවාවන්",
-    nav_showcase: "නිර්මාණ",
+    nav_portfolio: "නිර්මාණ Sample",
+    nav_reels: "AI Reels",
+    nav_showcase: "Studio",
     nav_process: "වැඩපිළිවෙල",
     nav_faq: "ප්‍රශ්න",
     nav_cta: "ඇණවුම් කරන්න",
@@ -232,7 +268,39 @@ const TRANSLATIONS = {
       "නිර්මාණ කළ පසු Print කර ගැනීමටත් අවශ්‍යද? නිවැරදි වර්ණ සහ උසස් නිමාවකින් Print කර ඔබ වෙත ලබා දෙන්නෙමු.",
     svc_print_l1: "Glossy & Matte Flyers, Tutes සහ පොත් කවර Printing",
     svc_print_l2: "Flex Banners, X-Stands සහ Stickers Printing",
-    svc_print_l3: "Business Cards, ආරාධනා පත්‍ර සහ සහතික පත්‍ර (Certificates)",
+    svc_print_l3: "Custom T-Shirt / Polo Printing, Hang Tags, Business Cards සහ සහතික පත්‍ර",
+
+    port_eyebrow: "අපේ නිර්මාණ",
+    port_title: "නිර්මාණ සහ Printing Samples",
+    port_desc:
+      "Tuition පන්ති Posters, Tute Covers, Social Media Flyers, Banners සහ T-Shirt/Tag Printing වැඩ කිහිපයක් පහතින් බලන්න. විශාල කර බැලීමට click කරන්න.",
+    flt_all: "සියල්ල (9)",
+    flt_flyers: "Social Flyers",
+    flt_covers: "Tute Covers",
+    flt_banners: "Banners & X-Stands",
+    flt_printing: "Printing වැඩ",
+    cat_cover: "Tute Cover",
+    cat_flyer: "Social Flyer",
+    cat_banner: "Banner & X-Stand",
+    cat_print: "Printing වැඩ",
+    p1_title: "2028 ව්‍යාපාර අධ්‍යයනය — Illustrated Tute Cover",
+    p2_title: "2029 Biology — Flex Banner (සක්‍යා)",
+    p3_title: "2028 ව්‍යාපාර අධ්‍යයනය — රජය හා ව්‍යාපාර Cover",
+    p4_title: "2028 ව්‍යාපාර අධ්‍යයනය — නව ඒකකය Flyer",
+    p5_title: "දෙමළ භාෂා පන්ති (1–9 ශ්‍රේණි) Flyer",
+    p6_title: "2028 ව්‍යාපාර අධ්‍යයනය — Class Promo Post",
+    p7_title: "2029 Accounting — X-Stand Banner",
+    pr1_title: "Black Buck — Custom Polo T-Shirt Print",
+    pr2_title: "Black Buck — Custom Apparel Hang Tag Print",
+
+    reels_eyebrow: "AI & Viral Video",
+    reels_title: "TikTok සහ AI Reels Samples",
+    reels_desc:
+      "Tuition පන්ති, ව්‍යාපාර සහ Creators ලා සඳහා AI තාක්ෂණය හා Modern Editing එක් කර නිපදවූ 9:16 Vertical TikTok/FB Reels කිහිපයක්.",
+    reel_1_title: "2027 පන්ති Promo — Outdoor AI Reel",
+    reel_1_desc: "ශ්‍රී ලාංකීය පසුබිමක AI දර්ශන සහ පැහැදිලි සිංහල කටහඬ සමඟ නිමවූ TikTok Reel එකක්.",
+    reel_2_title: "2028 A/L Combined Maths — Classroom AI Reel",
+    reel_2_desc: "පන්ති කාමර දර්ශන, ආකර්ෂණීය Hook එක සහ Branded Outro සමඟ නිමවූ AI Reel එකක්.",
 
     showcase_eyebrow: "නිර්මාණ පරාසය",
     showcase_title: "වර්ණවත් බව, ගුණාත්මක බව සහ වේගවත් බව",
@@ -458,6 +526,83 @@ document.addEventListener("DOMContentLoaded", () => {
       const wasOpen = item.classList.contains("open");
       document.querySelectorAll(".faq-item").forEach((i) => i.classList.remove("open"));
       if (!wasOpen) item.classList.add("open");
+    });
+  });
+
+  // Portfolio category filter
+  const filterBtns = document.querySelectorAll(".filter-btn");
+  const portCards = Array.from(document.querySelectorAll(".port-card"));
+  filterBtns.forEach((btn) => {
+    btn.addEventListener("click", () => {
+      const filter = btn.dataset.filter;
+      filterBtns.forEach((b) => b.classList.remove("active"));
+      btn.classList.add("active");
+      portCards.forEach((card) => {
+        const match = filter === "all" || card.dataset.category === filter;
+        card.classList.toggle("hidden", !match);
+      });
+    });
+  });
+
+  // Lightbox preview for portfolio samples
+  const lightbox = document.getElementById("lightbox");
+  const lbImg = document.getElementById("lb-img");
+  const lbCaption = document.getElementById("lb-caption");
+  const lbClose = document.getElementById("lb-close");
+  const lbPrev = document.getElementById("lb-prev");
+  const lbNext = document.getElementById("lb-next");
+  let activeCards = [];
+  let currentLbIdx = 0;
+
+  function renderLightbox(idx) {
+    if (!activeCards.length) return;
+    currentLbIdx = (idx + activeCards.length) % activeCards.length;
+    const card = activeCards[currentLbIdx];
+    const img = card.querySelector("img");
+    const title = card.querySelector("h4");
+    lbImg.src = img.src;
+    lbImg.alt = img.alt;
+    lbCaption.textContent = title ? title.textContent : "";
+  }
+
+  function closeLightbox() {
+    if (!lightbox) return;
+    lightbox.classList.remove("open");
+    lightbox.setAttribute("aria-hidden", "true");
+  }
+
+  portCards.forEach((card) => {
+    card.addEventListener("click", () => {
+      activeCards = portCards.filter((c) => !c.classList.contains("hidden"));
+      const idx = activeCards.indexOf(card);
+      renderLightbox(idx >= 0 ? idx : 0);
+      lightbox.classList.add("open");
+      lightbox.setAttribute("aria-hidden", "false");
+    });
+  });
+
+  if (lbClose) lbClose.addEventListener("click", closeLightbox);
+  if (lbPrev) lbPrev.addEventListener("click", () => renderLightbox(currentLbIdx - 1));
+  if (lbNext) lbNext.addEventListener("click", () => renderLightbox(currentLbIdx + 1));
+  if (lightbox) {
+    lightbox.addEventListener("click", (e) => {
+      if (e.target === lightbox) closeLightbox();
+    });
+  }
+  document.addEventListener("keydown", (e) => {
+    if (!lightbox || !lightbox.classList.contains("open")) return;
+    if (e.key === "Escape") closeLightbox();
+    if (e.key === "ArrowLeft") renderLightbox(currentLbIdx - 1);
+    if (e.key === "ArrowRight") renderLightbox(currentLbIdx + 1);
+  });
+
+  // Auto-pause other reel videos when one plays
+  const reelVideos = document.querySelectorAll(".reel-video");
+  reelVideos.forEach((vid) => {
+    vid.addEventListener("play", () => {
+      reelVideos.forEach((other) => {
+        if (other !== vid && !other.paused) other.pause();
+      });
     });
   });
 

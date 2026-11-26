@@ -769,6 +769,318 @@ button {
   border: 1px solid rgba(255, 255, 255, 0.16);
 }
 
+/* ---------- Portfolio Masonry & Lightbox ---------- */
+.portfolio-filters {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.7rem;
+  margin-bottom: 2.2rem;
+}
+
+.filter-btn {
+  padding: 0.55rem 1.25rem;
+  border-radius: var(--radius-pill);
+  font-size: 0.9rem;
+  font-weight: 700;
+  color: var(--text-muted);
+  background: rgba(255, 255, 255, 0.06);
+  border: 1px solid rgba(255, 255, 255, 0.14);
+  transition: all 0.25s ease;
+}
+
+.filter-btn:hover {
+  color: #ffffff;
+  border-color: var(--c-cyan);
+}
+
+.filter-btn.active {
+  background: var(--grad-btn);
+  color: #ffffff;
+  border-color: transparent;
+  box-shadow: 0 8px 24px -6px rgba(255, 46, 147, 0.48);
+}
+
+.portfolio-masonry {
+  column-count: 3;
+  column-gap: 1.4rem;
+}
+
+.port-card {
+  break-inside: avoid;
+  margin-bottom: 1.4rem;
+  border-radius: var(--radius-md);
+  overflow: hidden;
+  background: var(--bg-card);
+  border: 1px solid var(--border-glass);
+  cursor: zoom-in;
+  transition: transform 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.port-card.hidden {
+  display: none;
+}
+
+.port-card:hover {
+  transform: translateY(-5px);
+  border-color: var(--c-cyan);
+  box-shadow: 0 20px 44px -15px rgba(0, 229, 255, 0.35);
+}
+
+.port-img-wrap {
+  position: relative;
+  overflow: hidden;
+  background: #0d0b1e;
+}
+
+.port-img-wrap img {
+  width: 100%;
+  height: auto;
+  display: block;
+  transition: transform 0.45s ease;
+}
+
+.port-card:hover .port-img-wrap img {
+  transform: scale(1.03);
+}
+
+.port-zoom {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  background: rgba(7, 6, 18, 0.78);
+  border: 1px solid rgba(255, 255, 255, 0.22);
+  font-size: 0.95rem;
+  opacity: 0;
+  transform: scale(0.85);
+  transition: all 0.25s ease;
+}
+
+.port-card:hover .port-zoom {
+  opacity: 1;
+  transform: scale(1);
+}
+
+.port-caption {
+  padding: 1rem 1.15rem;
+}
+
+.port-badge {
+  display: inline-block;
+  font-size: 0.72rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  padding: 0.25rem 0.65rem;
+  border-radius: var(--radius-pill);
+  margin-bottom: 0.45rem;
+}
+
+.badge-cover {
+  background: rgba(255, 184, 0, 0.16);
+  color: #ffd466;
+  border: 1px solid rgba(255, 184, 0, 0.45);
+}
+
+.badge-flyer {
+  background: rgba(255, 46, 147, 0.16);
+  color: #ff85c1;
+  border: 1px solid rgba(255, 46, 147, 0.45);
+}
+
+.badge-banner {
+  background: rgba(0, 229, 255, 0.16);
+  color: #75f0ff;
+  border: 1px solid rgba(0, 229, 255, 0.45);
+}
+
+.badge-print {
+  background: rgba(34, 211, 122, 0.16);
+  color: #7af0b3;
+  border: 1px solid rgba(34, 211, 122, 0.45);
+}
+
+.port-caption h4 {
+  font-size: 0.98rem;
+  font-weight: 700;
+  line-height: 1.35;
+}
+
+/* Lightbox Modal */
+.lightbox {
+  position: fixed;
+  inset: 0;
+  z-index: 200;
+  background: rgba(5, 4, 14, 0.92);
+  backdrop-filter: blur(14px);
+  display: none;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+}
+
+.lightbox.open {
+  display: flex;
+}
+
+.lightbox-content {
+  max-width: min(92vw, 980px);
+  max-height: 88vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.9rem;
+}
+
+.lightbox-content img {
+  max-width: 100%;
+  max-height: 78vh;
+  border-radius: 16px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  box-shadow: 0 28px 70px rgba(0, 0, 0, 0.75);
+  object-fit: contain;
+}
+
+.lightbox-content p {
+  font-weight: 700;
+  color: var(--text-main);
+  text-align: center;
+}
+
+.lb-close,
+.lb-nav {
+  position: fixed;
+  width: 46px;
+  height: 46px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.12);
+  border: 1px solid rgba(255, 255, 255, 0.24);
+  color: #fff;
+  font-size: 1.7rem;
+  display: grid;
+  place-items: center;
+  transition: background 0.2s ease, transform 0.2s ease;
+}
+
+.lb-close:hover,
+.lb-nav:hover {
+  background: var(--grad-btn);
+  transform: scale(1.06);
+}
+
+.lb-close {
+  top: 20px;
+  right: 24px;
+}
+
+.lb-prev {
+  left: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.lb-next {
+  right: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.lb-prev:hover {
+  transform: translateY(-50%) scale(1.06);
+}
+
+.lb-next:hover {
+  transform: translateY(-50%) scale(1.06);
+}
+
+/* ---------- TikTok & AI Reels Phone Showcase ---------- */
+.reels-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 340px));
+  justify-content: center;
+  gap: 2.5rem;
+}
+
+.reel-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 1.2rem;
+}
+
+.reel-phone-frame {
+  width: 100%;
+  padding: 7px;
+  border-radius: 32px;
+  background: var(--grad-rainbow);
+  box-shadow: var(--shadow-glow);
+  transition: transform 0.35s ease;
+}
+
+.reel-card:hover .reel-phone-frame {
+  transform: translateY(-6px);
+}
+
+.reel-screen {
+  position: relative;
+  border-radius: 26px;
+  overflow: hidden;
+  background: #05040d;
+  aspect-ratio: 9 / 16;
+}
+
+.reel-video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.reel-badge {
+  position: absolute;
+  top: 14px;
+  left: 14px;
+  padding: 0.32rem 0.8rem;
+  border-radius: var(--radius-pill);
+  font-size: 0.74rem;
+  font-weight: 800;
+  letter-spacing: 0.04em;
+  background: rgba(7, 6, 18, 0.8);
+  border: 1px solid rgba(255, 46, 147, 0.65);
+  color: #ff94c8;
+  backdrop-filter: blur(8px);
+  pointer-events: none;
+}
+
+.reel-badge.badge-cyan {
+  border-color: rgba(0, 229, 255, 0.65);
+  color: #84f2ff;
+}
+
+.reel-info h4 {
+  font-family: "Space Grotesk", "Noto Sans Sinhala", sans-serif;
+  font-size: 1.15rem;
+  font-weight: 800;
+  margin-bottom: 0.35rem;
+}
+
+.reel-info p {
+  font-size: 0.92rem;
+  color: var(--text-muted);
+}
+
+@media (max-width: 720px) {
+  .reels-grid {
+    grid-template-columns: minmax(0, 320px);
+  }
+}
+
 /* ---------- Showcase / Visual Gallery ---------- */
 .showcase-grid {
   display: grid;
@@ -1127,6 +1439,10 @@ button {
     grid-template-columns: repeat(2, 1fr);
   }
 
+  .portfolio-masonry {
+    column-count: 2;
+  }
+
   .steps-grid {
     grid-template-columns: repeat(2, 1fr);
   }
@@ -1159,6 +1475,10 @@ button {
   .service-selector,
   .hero-stats {
     grid-template-columns: 1fr;
+  }
+
+  .portfolio-masonry {
+    column-count: 1;
   }
 
   .float-card.top-left {

@@ -42,7 +42,9 @@
       <nav>
         <ul class="nav-links" id="nav-links">
           <li><a href="#services" data-i18n="nav_services">Services</a></li>
-          <li><a href="#showcase" data-i18n="nav_showcase">Showcase</a></li>
+          <li><a href="#portfolio" data-i18n="nav_portfolio">Portfolio</a></li>
+          <li><a href="#reels" data-i18n="nav_reels">AI Reels</a></li>
+          <li><a href="#showcase" data-i18n="nav_showcase">Studio</a></li>
           <li><a href="#process" data-i18n="nav_process">How It Works</a></li>
           <li><a href="#faq" data-i18n="nav_faq">FAQ</a></li>
         </ul>
@@ -314,13 +316,180 @@
               <ul class="feature-list">
                 <li data-i18n="svc_print_l1">Glossy &amp; Matte Flyers, Class Handouts &amp; Booklets</li>
                 <li data-i18n="svc_print_l2">Weatherproof Flex Banners, X-Stands &amp; Stickers</li>
-                <li data-i18n="svc_print_l3">Premium Business Cards, Invitation Cards &amp; Certificates</li>
+                <li data-i18n="svc_print_l3">Custom T-Shirt / Polo Printing, Hang Tags, Business Cards &amp; Certificates</li>
               </ul>
             </div>
             <div class="service-footer">
               <a href="#order" class="service-action" data-select-service="Design Printing" data-i18n="svc_cta_select">
                 Select This Service →
               </a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Real Design Samples Portfolio -->
+    <section class="section" id="portfolio">
+      <div class="container">
+        <div class="section-header reveal">
+          <div class="eyebrow"><span class="dot"></span><span data-i18n="port_eyebrow">Recent Works</span></div>
+          <h2 class="section-title" data-i18n="port_title">Real Design Samples &amp; Client Works</h2>
+          <p class="section-desc" data-i18n="port_desc">
+            A curated gallery of tuition posters, tute covers, social media flyers, and flex/X-banners crafted for Sri Lankan educators. Click any design to preview full size.
+          </p>
+        </div>
+
+        <div class="portfolio-filters reveal" role="tablist" aria-label="Portfolio Categories">
+          <button type="button" class="filter-btn active" data-filter="all" data-i18n="flt_all">All Works (9)</button>
+          <button type="button" class="filter-btn" data-filter="flyers" data-i18n="flt_flyers">Social Flyers</button>
+          <button type="button" class="filter-btn" data-filter="covers" data-i18n="flt_covers">Tute Covers</button>
+          <button type="button" class="filter-btn" data-filter="banners" data-i18n="flt_banners">Banners &amp; X-Stands</button>
+          <button type="button" class="filter-btn" data-filter="printing" data-i18n="flt_printing">Printing Works</button>
+        </div>
+
+        <div class="portfolio-masonry" id="portfolio-grid">
+          <figure class="port-card reveal" data-category="covers" data-index="0">
+            <div class="port-img-wrap">
+              <img src="assets/samples/sample-1.jpg" alt="2028 Business Studies Tute Cover - Pasindu Kaluarachchi" loading="lazy" />
+              <span class="port-zoom" aria-hidden="true">🔍</span>
+            </div>
+            <figcaption class="port-caption">
+              <span class="port-badge badge-cover" data-i18n="cat_cover">Tute Cover</span>
+              <h4 data-i18n="p1_title">2028 Business Studies — Illustrated Cover</h4>
+            </figcaption>
+          </figure>
+
+          <figure class="port-card reveal" data-category="flyers" data-index="3">
+            <div class="port-img-wrap">
+              <img src="assets/samples/sample-4.jpg" alt="2028 Business Studies New Unit Social Flyer" loading="lazy" />
+              <span class="port-zoom" aria-hidden="true">🔍</span>
+            </div>
+            <figcaption class="port-caption">
+              <span class="port-badge badge-flyer" data-i18n="cat_flyer">Social Flyer</span>
+              <h4 data-i18n="p4_title">2028 Business Studies — Unit Launch</h4>
+            </figcaption>
+          </figure>
+
+          <figure class="port-card reveal" data-category="banners" data-index="6">
+            <div class="port-img-wrap">
+              <img src="assets/samples/sample-7.jpg" alt="2029 Accounting X-Stand Banner - Dulanjaya Jayasekara" loading="lazy" />
+              <span class="port-zoom" aria-hidden="true">🔍</span>
+            </div>
+            <figcaption class="port-caption">
+              <span class="port-badge badge-banner" data-i18n="cat_banner">Banner &amp; X-Stand</span>
+              <h4 data-i18n="p7_title">2029 Accounting — X-Stand Banner</h4>
+            </figcaption>
+          </figure>
+
+          <figure class="port-card reveal" data-category="banners" data-index="1">
+            <div class="port-img-wrap">
+              <img src="assets/samples/sample-2.jpg" alt="2029 Biology Wide Flex Banner - Devinda Wijekoon" loading="lazy" />
+              <span class="port-zoom" aria-hidden="true">🔍</span>
+            </div>
+            <figcaption class="port-caption">
+              <span class="port-badge badge-banner" data-i18n="cat_banner">Banner &amp; X-Stand</span>
+              <h4 data-i18n="p2_title">2029 Biology — Flex Banner (Sakya)</h4>
+            </figcaption>
+          </figure>
+
+          <figure class="port-card reveal" data-category="flyers" data-index="4">
+            <div class="port-img-wrap">
+              <img src="assets/samples/sample-5.jpg" alt="Tamil Language Classes Flyer - Grade 1 to 9" loading="lazy" />
+              <span class="port-zoom" aria-hidden="true">🔍</span>
+            </div>
+            <figcaption class="port-caption">
+              <span class="port-badge badge-flyer" data-i18n="cat_flyer">Social Flyer</span>
+              <h4 data-i18n="p5_title">Tamil Language Classes — Grade 1–9 Flyer</h4>
+            </figcaption>
+          </figure>
+
+          <figure class="port-card reveal" data-category="covers" data-index="2">
+            <div class="port-img-wrap">
+              <img src="assets/samples/sample-3.jpg" alt="2028 Business Studies State & Business Tute Cover" loading="lazy" />
+              <span class="port-zoom" aria-hidden="true">🔍</span>
+            </div>
+            <figcaption class="port-caption">
+              <span class="port-badge badge-cover" data-i18n="cat_cover">Tute Cover</span>
+              <h4 data-i18n="p3_title">2028 Business Studies — Module Cover</h4>
+            </figcaption>
+          </figure>
+
+          <figure class="port-card reveal" data-category="flyers" data-index="5">
+            <div class="port-img-wrap">
+              <img src="assets/samples/sample-6.jpg" alt="2028 Business Studies Shakya Class Schedule Post" loading="lazy" />
+              <span class="port-zoom" aria-hidden="true">🔍</span>
+            </div>
+            <figcaption class="port-caption">
+              <span class="port-badge badge-flyer" data-i18n="cat_flyer">Social Flyer</span>
+              <h4 data-i18n="p6_title">2028 Business Studies — Class Promo Post</h4>
+            </figcaption>
+          </figure>
+
+          <figure class="port-card reveal" data-category="printing" data-index="7">
+            <div class="port-img-wrap">
+              <img src="assets/samples/print-1.jpg" alt="Black Buck Custom Polo T-Shirt Design and Printing" loading="lazy" />
+              <span class="port-zoom" aria-hidden="true">🔍</span>
+            </div>
+            <figcaption class="port-caption">
+              <span class="port-badge badge-print" data-i18n="cat_print">Printing Work</span>
+              <h4 data-i18n="pr1_title">Black Buck — Custom Polo T-Shirt Print</h4>
+            </figcaption>
+          </figure>
+
+          <figure class="port-card reveal" data-category="printing" data-index="8">
+            <div class="port-img-wrap">
+              <img src="assets/samples/print-2.jpg" alt="Black Buck Apparel Hang Tag and Brand Label Printing" loading="lazy" />
+              <span class="port-zoom" aria-hidden="true">🔍</span>
+            </div>
+            <figcaption class="port-caption">
+              <span class="port-badge badge-print" data-i18n="cat_print">Printing Work</span>
+              <h4 data-i18n="pr2_title">Black Buck — Custom Apparel Hang Tag Print</h4>
+            </figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <!-- TikTok & AI Reels Video Samples -->
+    <section class="section" id="reels">
+      <div class="container">
+        <div class="section-header reveal">
+          <div class="eyebrow"><span class="dot"></span><span data-i18n="reels_eyebrow">AI &amp; Viral Video</span></div>
+          <h2 class="section-title" data-i18n="reels_title">TikTok &amp; AI Reels Samples</h2>
+          <p class="section-desc" data-i18n="reels_desc">
+            Next-level AI-assisted &amp; custom-edited 9:16 vertical Reels for tuition teachers, brands, and creators — built to stop the scroll and boost admissions or sales.
+          </p>
+        </div>
+
+        <div class="reels-grid">
+          <article class="reel-card reveal">
+            <div class="reel-phone-frame">
+              <div class="reel-screen">
+                <video class="reel-video" controls playsinline preload="metadata">
+                  <source src="assets/reels/reel-1.mp4" type="video/mp4" />
+                </video>
+                <span class="reel-badge">AI Reel 01</span>
+              </div>
+            </div>
+            <div class="reel-info">
+              <h4 data-i18n="reel_1_title">2027 Class Promo — Outdoor AI Commercial</h4>
+              <p data-i18n="reel_1_desc">Natural Sri Lankan outdoor storytelling with crisp Sinhala voiceover, AI visuals &amp; 9:16 pacing.</p>
+            </div>
+          </article>
+
+          <article class="reel-card reveal">
+            <div class="reel-phone-frame">
+              <div class="reel-screen">
+                <video class="reel-video" controls playsinline preload="metadata">
+                  <source src="assets/reels/reel-2.mp4" type="video/mp4" />
+                </video>
+                <span class="reel-badge badge-cyan">AI Reel 02</span>
+              </div>
+            </div>
+            <div class="reel-info">
+              <h4 data-i18n="reel_2_title">2028 A/L Combined Maths — Classroom AI Reel</h4>
+              <p data-i18n="reel_2_desc">Dynamic classroom scenes, emotional hook, clean Sinhala narration &amp; branded outro card.</p>
             </div>
           </article>
         </div>
@@ -429,21 +598,21 @@
                 <div class="float-icon pink">💬</div>
                 <div>
                   <strong data-i18n="contact_wa_t">WhatsApp / Call</strong>
-                  <span id="studio-phone">+94 77 000 0000</span>
+                  <span id="studio-phone">070 487 0348 (+94 70 487 0348)</span>
                 </div>
               </div>
               <div class="contact-pill">
                 <div class="float-icon cyan">✉️</div>
                 <div>
                   <strong data-i18n="contact_em_t">Email Studio</strong>
-                  <span id="studio-email">hello@clickdesign.lk</span>
+                  <span id="studio-email">sankalpaisiwara@gmail.com</span>
                 </div>
               </div>
               <div class="contact-pill">
                 <div class="float-icon" style="background: linear-gradient(135deg, #ffb800, #ff5e57);">🚀</div>
                 <div>
                   <strong data-i18n="contact_loc_t">Service Coverage</strong>
-                  <span id="studio-location">Islandwide Online Service &amp; Print Delivery (Sri Lanka)</span>
+                  <span id="studio-location">Panadura — Islandwide Online Service &amp; Print Delivery</span>
                 </div>
               </div>
             </div>
@@ -594,6 +763,17 @@
   </a>
 
   <div id="toast" class="toast" role="status" aria-live="polite"></div>
+
+  <!-- Lightbox Modal for Design Samples -->
+  <div class="lightbox" id="lightbox" aria-hidden="true" role="dialog" aria-label="Design Sample Preview">
+    <button type="button" class="lb-close" id="lb-close" aria-label="Close Preview">×</button>
+    <button type="button" class="lb-nav lb-prev" id="lb-prev" aria-label="Previous Sample">‹</button>
+    <div class="lightbox-content">
+      <img id="lb-img" src="" alt="Design sample full preview" />
+      <p id="lb-caption"></p>
+    </div>
+    <button type="button" class="lb-nav lb-next" id="lb-next" aria-label="Next Sample">›</button>
+  </div>
 
   <script src="script.js"></script>
 </body>
